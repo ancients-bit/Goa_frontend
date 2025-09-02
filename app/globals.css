@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ... your base variables and styles ... */
+}
+
+@layer base {
+  /* ... your base reset styles ... */
+}
+
+@layer components {
+  .animate-on-scroll {
+    /* ... */
+  }
+  .animate-on-scroll.visible {
+    /* ... */
+  }
+  .text-shadow {
+    /* ... */
+  }
+  .bg-texture {
+    /* ... */
+  }
+  .bg-texture::before {
+    /* ... */
+  }
+
+  /* === Add the blurred card styles here === */
+  .blurred {
+    filter: blur(2px);
+    position: reative;
+    pointer-events: none;
+    user-select: none;
+  }
+  .blurred::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.25);
+    pointer-events: none;
+  }
+}
